@@ -2,7 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 
-const allowedOrigins = ['http://localhost:8888', 'https://e-learning-learn-go.vercel.app'];
+const allowedOrigins = ['http://localhost:3001', 'https://e-learning-learn-go.vercel.app'];
 
 const corsConfig = {
   origin: function (origin, callback) {

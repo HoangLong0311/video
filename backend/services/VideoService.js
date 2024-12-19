@@ -11,7 +11,7 @@ exports.getVideoListService = async () => {
 
 exports.getVideoListServiceAll = async () => {
   try {
-    const videos = await VideoModel.find({}).select('-html');
+    const videos = await VideoModel.find({});
     return videos;
   } catch (error) {
     throw error;
